@@ -48,9 +48,9 @@ namespace SocketServer
                     Listen();
                     ShowMsg("Démarrage du serveur terminé！");
                 }
-                catch (Exception er)
+                catch (Exception error)
                 {
-                    ShowMsg("Erreur démarrage du serveur：" + er.ToString());
+                    ShowMsg("Erreur démarrage du serveur：" + error.ToString());
                 }
             }
         }
@@ -84,7 +84,6 @@ namespace SocketServer
             }));
         }
 
-        //TODO
         private async void Receive(Socket socket)
         {
             await Task.Run(new Action(() =>
@@ -98,9 +97,9 @@ namespace SocketServer
                         string msg = Encoding.UTF8.GetString(bytes, 0, length);
                         ShowMsg("Reçu de" + socket.RemoteEndPoint.ToString() + "：" + msg);
                     }
-                    catch (SocketException)
+                    catch (SocketException error)
                     {
-                        //Exception
+                        ShowMsg("Erreur：" + error.ToString());
                     }
                 }
             }));
@@ -117,9 +116,9 @@ namespace SocketServer
                 }
                 ShowMsg("Message serveur：" + msg);
             }
-            catch (Exception er)
+            catch (Exception error)
             {
-                ShowMsg("Erreur：" + er.ToString());
+                ShowMsg("Erreur：" + error.ToString());
             }
         }
     }
