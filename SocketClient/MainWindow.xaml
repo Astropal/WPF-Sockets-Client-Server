@@ -20,7 +20,7 @@
             <TextBox x:Name="txtPort" Width="36" TextWrapping="Wrap" Text="3000" VerticalAlignment="Center" Margin="10,0" Foreground="White" BorderBrush="{x:Null}" Background="#FF0A1820"/>
             <Button x:Name="btnStartServer" Content="Connexion" Click="btnLinkServer_Click" Margin="30,0" BorderBrush="{x:Null}" Background="#FF153E54" Foreground="White"/>
         </DockPanel>
-        <ListBox x:Name="lbInfo"  Grid.Row="1" Margin="20,0" Background="#FF162127" BorderBrush="{x:Null}"/>
+        <ListBox x:Name="lbInfo"  Grid.Row="1" Margin="20,0" Background="#FF162127" BorderBrush="{x:Null}" Foreground="White"/>
         <DockPanel Grid.Row="2" Margin="20,0">
             <Button x:Name="btnSend" Content="Envoyer MSG" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="75" Click="btnSend_Click" DockPanel.Dock="Right" Foreground="White" Background="#FF153E54" BorderBrush="{x:Null}"/>
             <TextBox x:Name="txtInput" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Foreground="White" Background="#FF162127" BorderBrush="{x:Null}"  />
