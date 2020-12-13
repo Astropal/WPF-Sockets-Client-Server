@@ -4,19 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-<<<<<<< HEAD:SocketClient/SocketClient.csproj
     <ProjectGuid>{EBD575D0-BFA3-4B08-92D7-D687FC2E6180}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SocketClient</RootNamespace>
     <AssemblyName>SocketClient</AssemblyName>
-=======
-    <ProjectGuid>{08DB6083-C370-4A83-B0EB-15649084F4BB}</ProjectGuid>
+    <ProjectGuid>{EBD575D0-BFA3-4B08-92D7-D687FC2E6180}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SocketServer</RootNamespace>
     <AssemblyName>SocketServer</AssemblyName>
->>>>>>> origin/server:SocketServer/SocketServer.csproj
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
