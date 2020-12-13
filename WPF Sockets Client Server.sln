@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Sockets Client Server", "..\WPF Sockets Client Server\WPF Sockets Client Server\WPF Sockets Client Server.csproj", "{7A5774DF-2EB7-469E-AB27-C426D95AA64D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A5774DF-2EB7-469E-AB27-C426D95AA64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5774DF-2EB7-469E-AB27-C426D95AA64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5774DF-2EB7-469E-AB27-C426D95AA64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5774DF-2EB7-469E-AB27-C426D95AA64D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97FBF2E3-E3AC-4802-B445-B7F413CE2269}
+	EndGlobalSection
+EndGlobal
