@@ -79,7 +79,7 @@ namespace SocketServer
                         lbClientList.Items.Add(socketCommunication.RemoteEndPoint.ToString());
                     }));
 
-                    ShowMsg("Le client se connecte avec succès! L'adresse postale est：" + socketCommunication.RemoteEndPoint.ToString());
+                    ShowMsg("Un nouvel utilisateur ! Son adresse ip est：" + socketCommunication.RemoteEndPoint.ToString());
                 }
             }));
         }
@@ -91,8 +91,17 @@ namespace SocketServer
             {
                 while (true)
                 {
-                    // Message Utilisateurs
-                    // Execption
+                    byte[] bytes = new byte[1024 * 1024 * 2];
+                    try
+                    {
+                        int length = socket.Receive(bytes);
+                        string msg = Encoding.UTF8.GetString(bytes, 0, length);
+                        ShowMsg("Reçu de" + socket.RemoteEndPoint.ToString() + "：" + msg);
+                    }
+                    catch (SocketException)
+                    {
+                        //Exception
+                    }
                 }
             }));
         }
