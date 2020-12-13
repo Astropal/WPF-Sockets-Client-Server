@@ -32,8 +32,8 @@
                 <ListBox x:Name="lbInfo"  DockPanel.Dock="Top" Background="#FF162127" Foreground="White" BorderBrush="{x:Null}" Margin="10,0,9.6,0"/>
             </DockPanel>
         </Grid>
-        <Button x:Name="btnSend" Content="MSG" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="34" Click="btnSend_Click" DockPanel.Dock="Right" Margin="250.167,32.05,0,289.278" Height="15" BorderBrush="{x:Null}" Background="#FF153E54" Foreground="White" FontSize="9" Grid.RowSpan="2"/>
-        <Button x:Name="btnSendAll" Content="GLOBAL" Margin="206,31.9,0,0.1" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="35.267" Click="btnSendAll_Click" DockPanel.Dock="Right" Height="15" Background="#FF153E54" Foreground="White" BorderBrush="{x:Null}" FontSize="8"/>
+        <Button x:Name="btnSend" Content="MSG" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="34" Click="BtnSend_Click" DockPanel.Dock="Right" Margin="250.167,32.05,0,289.278" Height="15" BorderBrush="{x:Null}" Background="#FF153E54" Foreground="White" FontSize="9" Grid.RowSpan="2"/>
+        <Button x:Name="btnSendAll" Content="GLOBAL" Margin="206,31.9,0,0.1" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="35.267" Click="BtnSendAll_Click" DockPanel.Dock="Right" Height="15" Background="#FF153E54" Foreground="White" BorderBrush="{x:Null}" FontSize="8"/>
         <TextBox x:Name="txtInput" TextWrapping="Wrap" Text="" Margin="13.733,32.05,0,0" Grid.RowSpan="2" Background="#FF0A1820" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" Width="181.72" Height="15" VerticalAlignment="Top"/>
         <Rectangle Fill="#FF162127" Height="57.2" VerticalAlignment="Top" Panel.ZIndex="-1" Grid.RowSpan="2" Margin="0,0,1.333,0"/>
         <TextBlock Height="29.56" Margin="0,12.573,11.333,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Text="ADMIN SIDE" FontSize="22" FontFamily="Segoe UI Black" HorizontalAlignment="Right" Width="143.333"/>
