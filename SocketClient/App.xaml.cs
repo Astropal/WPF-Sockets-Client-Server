@@ -6,11 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WPF_Sockets_Client_Server
+namespace SocketClient
 {
-    /// <summary>
-    /// Logique d'interaction pour App.xaml
-    /// </summary>
     public partial class App : Application
     {
     }
