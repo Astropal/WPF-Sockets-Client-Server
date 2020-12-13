@@ -105,7 +105,7 @@ namespace SocketServer
             }));
         }
 
-        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        private void BtnSendAll_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -119,6 +119,27 @@ namespace SocketServer
             catch (Exception error)
             {
                 ShowMsg("Erreur：" + error.ToString());
+            }
+        }
+
+        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbClientList.SelectedIndex > -1)
+            {
+                try
+                {
+                    string msg = txtInput.Text.Trim();
+                    dicSocket[lbClientList.SelectedItem.ToString()].Send(Encoding.UTF8.GetBytes(msg));   //Message à un client
+                    ShowMsg("Message envoyé：" + msg);
+                }
+                catch (Exception er)
+                {
+                    ShowMsg("Erreur：" + er.ToString());
+                }
+            }
+            else
+            {
+                ShowMsg("Veuillez sélectionner un client！");
             }
         }
     }
