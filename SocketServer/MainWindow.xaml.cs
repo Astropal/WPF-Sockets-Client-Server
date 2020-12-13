@@ -25,6 +25,7 @@ namespace SocketServer
     public partial class MainWindow : Window
     {
         Socket socketWatch = null;
+        Socket socketCommunication = null;
         Dictionary<string, Socket> dicSocket;
         public MainWindow()
         {
@@ -69,13 +70,22 @@ namespace SocketServer
             {
                 while (true)
                 {
-                    // Nouvel utilisateur
+                    socketCommunication = socketWatch.Accept();
+                    Receive(socketCommunication);
+                    dicSocket.Add(socketCommunication.RemoteEndPoint.ToString(), socketCommunication);
+
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        lbClientList.Items.Add(socketCommunication.RemoteEndPoint.ToString());
+                    }));
+
+                    ShowMsg("Le client se connecte avec succès! L'adresse postale est：" + socketCommunication.RemoteEndPoint.ToString());
                 }
             }));
         }
 
         //TODO
-        private async void Receive()
+        private async void Receive(Socket socket)
         {
             await Task.Run(new Action(() =>
             {

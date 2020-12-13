@@ -20,19 +20,22 @@
         </DockPanel>
         <Grid Grid.Row="1" Margin="0,3.2,0,30.2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="208"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-
-            <DockPanel Margin="10,18,4.6,-16.8" Grid.ColumnSpan="2">
-                <TextBlock TextWrapping="Wrap" Text="Console:" DockPanel.Dock="Top" Foreground="White"/>
-                <ListBox x:Name="lbInfo"  DockPanel.Dock="Top" Background="#FF162127" Foreground="White" BorderBrush="{x:Null}" Margin="0,0,10,0"/>
+            <DockPanel Grid.Column="1" Margin="114.933,18.2,0,-16.8">
+                <TextBlock TextWrapping="Wrap" Text="Client en ligne:" DockPanel.Dock="Top" Foreground="White" HorizontalAlignment="Right" Width="164.667"/>
+                <ListBox x:Name="lbClientList"  DockPanel.Dock="Bottom" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="164.667"/>
+            </DockPanel>
+            <DockPanel Margin="20,18,192.6,-16.8" Grid.ColumnSpan="2">
+                <TextBlock TextWrapping="Wrap" Text="Console:" DockPanel.Dock="Top" Foreground="White" Margin="10,0"/>
+                <ListBox x:Name="lbInfo"  DockPanel.Dock="Top" Background="#FF162127" Foreground="White" BorderBrush="{x:Null}" Margin="10,0,9.6,0"/>
             </DockPanel>
         </Grid>
         <Button x:Name="btnSend" Content="envoyer MSG" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="203.746,30,0,0" Width="80.6" Click="BtnSend_Click" DockPanel.Dock="Right" Height="17" Background="#FF153E54" BorderBrush="{x:Null}" Foreground="White"/>
         <TextBox x:Name="txtInput" TextWrapping="Wrap" Text="" Margin="13.733,32.05,0,0" Grid.RowSpan="2" Background="#FF0A1820" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" Width="181.72" Height="15" VerticalAlignment="Top"/>
         <Rectangle Fill="#FF162127" Height="57.2" VerticalAlignment="Top" Panel.ZIndex="-1" Grid.RowSpan="2" Margin="0,0,1.333,0"/>
         <TextBlock Height="29.56" Margin="0,12.573,11.333,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Text="ADMIN SIDE" FontSize="22" FontFamily="Segoe UI Black" HorizontalAlignment="Right" Width="143.333"/>
-        <Rectangle Fill="#FF0A1820" Height="56.4" Margin="0,0.754,1.333,0" VerticalAlignment="Top" Panel.ZIndex="-1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="164.333"/>
+        <Rectangle Fill="#FF0A1820" Margin="0,0.754,1.333,0" Panel.ZIndex="-1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="164.333"/>
     </Grid>
 </Window>
