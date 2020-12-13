@@ -5,20 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SocketServer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="263.4" Width="515.867">
-    <Grid Background="#FF263238" HorizontalAlignment="Left" Width="542" Height="251" VerticalAlignment="Top">
+        Title="MainWindow" Height="361" Width="487.6">
+    <Grid Background="#FF263238" Margin="0,0,-6.4,-4.928">
         <Grid.RowDefinitions>
-            <RowDefinition Height="32.8"/>
+            <RowDefinition Height="47"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DockPanel LastChildFill="False" VerticalAlignment="Center" Margin="0,13,35,2.8" Height="17" >
+        <DockPanel LastChildFill="False" VerticalAlignment="Bottom"  Height="17" Margin="10,0,-10,20" >
             <TextBlock TextWrapping="Wrap" Text="IP:" VerticalAlignment="Center" Foreground="White"/>
-            <TextBox x:Name="txtIP" Width="54" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Center" Margin="10,0"/>
+            <TextBox x:Name="txtIP" Width="54" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Center" Margin="10,0" Background="#FF0A1820" Foreground="White" BorderBrush="{x:Null}"/>
             <TextBlock TextWrapping="Wrap" Text="Port:" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="White"/>
-            <TextBox x:Name="txtPort" Width="34" TextWrapping="Wrap" Text="3000" VerticalAlignment="Center" Margin="10,0"/>
-            <Button x:Name="btnStartServer" Content="Démarrer le Serveur" Click="BtnStartServer_Click" Margin="0,0"/>
-            <Button x:Name="btnSend" Content="envoyer MSG" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0" Width="75" Click="BtnSend_Click" DockPanel.Dock="Right"/>
-            <TextBox x:Name="txtInput" Height="24" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="141" Margin="10,0"/>
+            <TextBox x:Name="txtPort" Width="34" TextWrapping="Wrap" Text="8080" VerticalAlignment="Center" Margin="10,0" Background="#FF0A1820" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="btnStartServer" Content="Démarrer le Serveur" Click="BtnStartServer_Click" Margin="0,0" Background="#FF153E54" BorderBrush="{x:Null}" Foreground="White"/>
         </DockPanel>
         <Grid Grid.Row="1" Margin="0,3.2,0,30.2">
             <Grid.ColumnDefinitions>
@@ -26,10 +24,15 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <DockPanel Margin="20,0,0,1.2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="473">
+            <DockPanel Margin="10,18,4.6,-16.8" Grid.ColumnSpan="2">
                 <TextBlock TextWrapping="Wrap" Text="Console:" DockPanel.Dock="Top" Foreground="White"/>
-                <ListBox x:Name="lbInfo"  DockPanel.Dock="Top"/>
+                <ListBox x:Name="lbInfo"  DockPanel.Dock="Top" Background="#FF162127" Foreground="White" BorderBrush="{x:Null}" Margin="0,0,10,0"/>
             </DockPanel>
         </Grid>
+        <Button x:Name="btnSend" Content="envoyer MSG" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="203.746,30,0,0" Width="80.6" Click="BtnSend_Click" DockPanel.Dock="Right" Height="17" Background="#FF153E54" BorderBrush="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="txtInput" TextWrapping="Wrap" Text="" Margin="13.733,32.05,0,0" Grid.RowSpan="2" Background="#FF0A1820" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" Width="181.72" Height="15" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FF162127" Height="57.2" VerticalAlignment="Top" Panel.ZIndex="-1" Grid.RowSpan="2" Margin="0,0,1.333,0"/>
+        <TextBlock Height="29.56" Margin="0,12.573,11.333,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Text="ADMIN SIDE" FontSize="22" FontFamily="Segoe UI Black" HorizontalAlignment="Right" Width="143.333"/>
+        <Rectangle Fill="#FF0A1820" Height="56.4" Margin="0,0.754,1.333,0" VerticalAlignment="Top" Panel.ZIndex="-1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="164.333"/>
     </Grid>
 </Window>
