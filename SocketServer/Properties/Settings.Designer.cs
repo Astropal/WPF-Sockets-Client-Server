@@ -8,11 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-<<<<<<< HEAD:SocketClient/Properties/Settings.Designer.cs
-namespace SocketClient.Properties
-=======
 namespace SocketServer.Properties
->>>>>>> origin/server:SocketServer/Properties/Settings.Designer.cs
 {
 
 

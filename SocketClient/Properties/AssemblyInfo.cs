@@ -9,7 +9,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Sockets - Client A3")]
-[assembly: AssemblyCopyright("Licence WTFP © 2020")]
+[assembly: AssemblyCopyright("License WTFP © 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

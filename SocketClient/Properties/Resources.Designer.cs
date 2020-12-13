@@ -1,8 +1,4 @@
-<<<<<<< HEAD:SocketClient/Properties/Resources.Designer.cs
-﻿namespace SocketClient.Properties
-=======
-﻿namespace SocketServer.Properties
->>>>>>> origin/server:SocketServer/Properties/Resources.Designer.cs
+namespace SocketClient.Properties
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26,11 +22,7 @@
             {
                 if ((resourceMan == null))
                 {
-<<<<<<< HEAD:SocketClient/Properties/Resources.Designer.cs
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SocketClient.Properties.Resources", typeof(Resources).Assembly);
-=======
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SocketServer.Properties.Resources", typeof(Resources).Assembly);
->>>>>>> origin/server:SocketServer/Properties/Resources.Designer.cs
                     resourceMan = temp;
                 }
                 return resourceMan;
