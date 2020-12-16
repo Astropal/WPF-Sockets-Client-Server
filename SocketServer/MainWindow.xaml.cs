@@ -99,7 +99,14 @@ namespace SocketServer
                     }
                     catch (SocketException error)
                     {
-                        ShowMsg("Erreur：" + error.ToString());
+                        ShowMsg("Erreur：" + error.Message);
+                        string key = socket.RemoteEndPoint.ToString();
+                        this.Dispatcher.BeginInvoke(new Action(() =>
+                        {
+                            lbClientList.Items.Remove(key);
+                        }));
+                        dicSocket.Remove(key);   //Ejecter le client
+                        break;
                     }
                 }
             }));
